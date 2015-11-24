@@ -1,0 +1,21 @@
+{
+  "name": "citypantry-js-coding-test",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Rebecca Appleyard <rklappleyard@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/katylouise/whats_for_lunch",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.5"
+  }
+}
