@@ -1,0 +1,22 @@
+main {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+h1 {
+  text-align: center;
+}
+
+.lunch-form {
+  margin: 50px auto;
+  max-width: 500px;
+}
+
+.find-my-lunch {
+  max-width: 500px;
+  margin-bottom: 30px;
+}
+
+.get-lunch-btn {
+  margin: 0 auto;
+}
