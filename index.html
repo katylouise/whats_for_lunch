@@ -1,15 +1,22 @@
 <html>
     <head>
+        <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+        <title>Find My Lunch</title>
     </head>
     <body ng-app="jsCodingTest">
         <main ng-controller="GiveTheGovernmentABurrito">
-            <h1>Find My Lunch</h1>
             <form>
-                <input type="text">
+                <h1>Find My Lunch</h1>
+                <div class="form-group">
+                    <label class="sr-only" for="findMyLunch"></label>
+                    <input type="text" class="form-control" id="findMyLunch" placeholder="What are you looking for?">
+                </div>
+                <button type="submit" class="btn btn-default">Go!</button>
             </form>
         </main>
 
         <script src="lib/angular.min.js"></script>
+        <script src="bower_components/angular-resource/angular-resource.js"></script>
         <script src="lib-integration.js"></script>
         <script src="node_modules/citypantry-js-lib/dist/lib-es5-with-browser-polyfill.js"></script>
         <script src="your-code.js"></script>
