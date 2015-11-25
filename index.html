@@ -11,14 +11,14 @@
                     <h1>Find My Lunch</h1>
                     <div class="form-group form-group-lg lunch-form">
                         <label class="sr-only" for="findMyLunch"></label>
-                        <input type="text" ng-model="searchTerm" class="form-control find-my-lunch" id="    findMyLunch" placeholder="What are you looking for?">
+                        <input type="text" ng-model="searchTerm" ng-change="doSearch()" ng-model-options="{ updateOn: 'default blur', debounce: {'default':500, 'blur': 0 } }" class="form-control find-my-lunch" id="    findMyLunch" placeholder="What are you looking for?">
                         <button type="submit" ng-click="doSearch()" class="btn btn-success btn-lg btn-block get-lunch-btn">Go!</button>
                     </div>
                 </form>
                 <p class="searched_for" ng-show="searchTerm">Search results for {{ searchTerm }}</p>
             </div>
 
-            <div class="row">
+            <div class="row" ng-show="searchTerm">
                 <ul class="list-group food-list">
                     <li ng-repeat="item in searchResult">
                         <div class="col-md-4 text-center">
