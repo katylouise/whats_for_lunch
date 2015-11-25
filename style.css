@@ -1,3 +1,7 @@
+* {
+  font-family: 'Oxygen', sans-serif;
+}
+
 .find-my-lunch-form {
   max-width: 800px;
   margin: 0 auto;
@@ -5,6 +9,7 @@
 
 h1 {
   text-align: center;
+  margin-top: 30px;
 }
 
 .lunch-form {
@@ -21,12 +26,18 @@ h1 {
   margin: 0 auto;
 }
 
+.searched-for {
+  padding-left: 20px;
+}
+
 .food-list {
   padding: 20px;
   list-style-type: none;
 }
 
-.food-img {
-  width: 200px;
-  height: auto;
+.center-cropped {
+  object-fit: none; /* Do not scale the image */
+  object-position: center;
+  height: 300px;
+  width: 300px;
 }

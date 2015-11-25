@@ -1,5 +1,6 @@
 <html>
     <head>
+        <link href='https://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
         <link rel="stylesheet" href="style.css">
         <title>Find My Lunch</title>
@@ -15,14 +16,14 @@
                         <button type="submit" ng-click="doSearch()" class="btn btn-success btn-lg btn-block get-lunch-btn">Go!</button>
                     </div>
                 </form>
-                <p class="searched_for" ng-show="searchTerm">Search results for {{ searchTerm }}</p>
             </div>
 
+            <div class="searched-for" ng-show="searchTerm">Search results for {{ searchTerm }}</div>
             <div class="row" ng-show="searchTerm">
                 <ul class="list-group food-list">
                     <li ng-repeat="item in searchResult">
                         <div class="col-md-4 text-center">
-                            <img class="food-img img-rounded" ng-src="{{ item.images[0].medium }}">
+                            <img class="food-img img-rounded center-cropped" ng-src="{{ item.images[0].medium }}">
                             <h4>{{ item.name }}</h4>
                             <h5>{{ item.vendor.name }}</h5>
                             <h5>{{ item.totalGrossFoodCost }}</h5>
