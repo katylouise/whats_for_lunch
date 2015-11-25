@@ -1,5 +1,6 @@
 <html>
     <head>
+        <meta charset="utf-8">
         <link href='https://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
         <link rel="stylesheet" href="style.css">
@@ -26,7 +27,7 @@
                             <img class="food-img img-rounded center-cropped" ng-src="{{ item.images[0].medium }}">
                             <h4>{{ item.name }}</h4>
                             <h5>{{ item.vendor.name }}</h5>
-                            <h5>{{ item.totalGrossFoodCost }}</h5>
+                            <h5>{{ item.totalGrossFoodCost | currency:"£" }}</h5>
                         </div>
                     </li>
                 </ul>
