@@ -22,9 +22,10 @@
                 <ul class="list-group food-list">
                     <li ng-repeat="item in searchResult">
                         <div class="col-md-4 text-center">
-                            <h4>{{ item.name }}</h4>
                             <img class="food-img img-rounded" ng-src="{{ item.images[0].medium }}">
+                            <h4>{{ item.name }}</h4>
                             <h5>{{ item.vendor.name }}</h5>
+                            <h5>{{ item.totalGrossFoodCost }}</h5>
                         </div>
                     </li>
                 </ul>
