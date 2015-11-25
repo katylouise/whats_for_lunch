@@ -1,4 +1,4 @@
-main {
+.find-my-lunch-form {
   max-width: 800px;
   margin: 0 auto;
 }
@@ -19,4 +19,14 @@ h1 {
 
 .get-lunch-btn {
   margin: 0 auto;
+}
+
+.food-list {
+  padding: 20px;
+  list-style-type: none;
+}
+
+.food-img {
+  width: 200px;
+  height: auto;
 }
