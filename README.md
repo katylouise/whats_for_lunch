@@ -17,7 +17,7 @@ open index.html
 For karma tests:
 ```
 npm test
-``
+```
 
 For protractor tests:
 ```
