@@ -15,7 +15,7 @@ describe('Find My Lunch', function() {
   it('finds food and displays the search term, meal names, cost, image and vendor', function() {
     searchBox.sendKeys('burritos');
     searchButton.click();
-    expect(searchedFor.getText()).toEqual('Search results for burritos');
+    expect(searchedFor.getText()).toEqual('4 results for burritos');
     expect(meals.get(0).element(by.binding('item.name')).getText()).toEqual('Bombay Burritos and Poppadoms');
     expect(meals.get(0).element(by.binding('item.totalGrossFoodCost')).getText()).toEqual('£7.20');
     expect(meals.get(0).element(by.binding('item.vendor.name')).getText()).toEqual('Bombay Burrito');

@@ -19,7 +19,7 @@
                 </form>
             </div>
 
-            <div class="searched-for" ng-show="searchTerm">Search results for {{ searchTerm }}</div>
+            <div class="searched-for" ng-show="searchTerm">{{ searchResult.length }} results for {{ searchTerm }}</div>
             <div class="row" ng-show="searchTerm">
                 <ul class="list-group food-list">
                     <li ng-repeat="item in searchResult">
@@ -33,7 +33,7 @@
                 </ul>
             </div>
         </main>
-
+        <!-- Assumption: the app is just returning the results - there is no further functionality, ie. a user can not click on an image to see anymore information -->
         <script src="lib/angular.min.js"></script>
         <script src="bower_components/angular-resource/angular-resource.js"></script>
         <script src="lib-integration.js"></script>

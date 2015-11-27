@@ -1,6 +1,6 @@
 # What's For Lunch
 
-A single page Angular application which allows users to find options for lunch.  A user enters their chosen lunch and the page will show the name, vendor, image and cost of the lunch.
+A single page Angular application which allows users to find options for lunch.  A user enters their chosen lunch and the page will show the name, vendor, image and cost of the lunch.  The page will show the number of results returned for that food item.
 
 ## Getting Started
 
