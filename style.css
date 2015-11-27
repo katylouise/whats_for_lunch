@@ -36,7 +36,7 @@ h1 {
 }
 
 .center-cropped {
-  object-fit: none; /* Do not scale the image */
+  object-fit: none;
   object-position: center;
   height: 300px;
   width: 300px;
