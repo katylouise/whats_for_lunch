@@ -25,7 +25,7 @@
                     <li ng-repeat="item in searchResult">
                         <div class="col-md-4 text-center">
                             <img class="food-img img-rounded center-cropped" ng-src="{{ item.images[0].medium }}">
-                            <h4>{{ item.name }}</h4>
+                            <h4>{{ item.name | limitTo: 35 }}{{ item.name.length > 35 ? "..." : "" }}</h4>
                             <h5>{{ item.vendor.name }}</h5>
                             <h5>{{ item.totalGrossFoodCost | currency:"£" }}</h5>
                         </div>
@@ -34,6 +34,7 @@
             </div>
         </main>
         <!-- Assumption: the app is just returning the results - there is no further functionality, ie. a user can not click on an image to see anymore information -->
+        <!-- Assumption: I truncated the names of food items longer than 35 chars -->
         <script src="lib/angular.min.js"></script>
         <script src="bower_components/angular-resource/angular-resource.js"></script>
         <script src="lib-integration.js"></script>
